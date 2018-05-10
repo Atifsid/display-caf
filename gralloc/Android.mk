@@ -21,7 +21,6 @@ LOCAL_CFLAGS                  += -std=c++14
 endif
 LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
 ifneq ($(TARGET_KERNEL_VERSION), 4.14)
-LOCAL_CFLAGS                  += -isystem
 endif
 LOCAL_CLANG                   := true
 LOCAL_SRC_FILES               := gr_ion_alloc.cpp \
